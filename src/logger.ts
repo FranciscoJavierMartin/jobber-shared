@@ -34,9 +34,11 @@ export function winstonLogger(
       },
     },
   };
+
   const esTransport: ElasticsearchTransport = new ElasticsearchTransport(
     options.elasticsearch
   );
+
   const logger: Logger = winston.createLogger({
     exitOnError: false,
     defaultMeta: { service: name },

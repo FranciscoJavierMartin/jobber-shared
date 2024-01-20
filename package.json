@@ -1,6 +1,6 @@
 {
   "name": "@franciscojaviermartin/jobber-shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "description": "Helpers library for Jobber app",
   "author": "",
@@ -51,8 +51,8 @@
   },
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
+      "import": "./index.js",
+      "require": "./index.js"
     },
     "./icons": {
       "import": "./esm/icons/index.js",

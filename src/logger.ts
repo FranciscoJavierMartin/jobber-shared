@@ -10,10 +10,19 @@ function esTransformer(logData: LogData): TransformedData {
   return ElasticsearchTransformer(logData);
 }
 
+export type LogLevel =
+  | 'error'
+  | 'warn'
+  | 'info'
+  | 'http'
+  | 'verbose'
+  | 'debug'
+  | 'silly';
+
 export function winstonLogger(
   elasticsearchNode: string,
   name: string,
-  level: string
+  level: LogLevel
 ): Logger {
   const options = {
     console: {
